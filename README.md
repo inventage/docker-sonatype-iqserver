@@ -10,7 +10,7 @@ This docker file is just for demo purposes and is not tested/recommended for pro
 
     docker run -p 8070:8070 -t -i iqs
 
-If you'd like to mount the working folder (including data and logs) in `/tmp/volume`:
+If you'd like to mount the working folder (including data and logs) in the host folder `/tmp/volume`:
 
     docker run -p 8070:8070 -v /tmp/volume:/sonatype-work -t -i iqs
 
