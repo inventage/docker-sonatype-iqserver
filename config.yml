@@ -109,6 +109,17 @@ http:
   # The password used to connect to the JIRA server
   #password: "guest"
 
+  # Any custom fields that you wish to populate in the JIRA notification. Any
+  # required fields must have default values configured here. Examples are shown below.
+  #customFields:
+  #   reporter:
+  #     name: "username"
+  #   labels:
+  #     - test
+  #     - bug
+  #   environment: "dev"
+  #   duedate: "2016-11-01"
+
 # Proxy settings.
 #proxy:
 
@@ -190,3 +201,12 @@ logging:
     archivedFileCount: 50
 
     logFormat: "%d{'yyyy-MM-dd HH:mm:ss,SSSZ'} %level [%thread] %X{username} %logger - %msg%n"
+
+
+# Passphrase used to encrypt the Webhook Secret Keys
+#webhookSecretPassphrase: "^d1swM!FF&qQ"
+
+#eventBus:
+  # Configures the number of threads used for the EventBus
+  # Defaults to 500 if not provided.
+  # maxPoolSize: 500
