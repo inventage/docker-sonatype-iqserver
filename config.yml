@@ -151,6 +151,9 @@ http:
     # The name of the HTTP request header that carries the username of an authenticated user.
     #usernameHeader: "REMOTE_USER"
 
+    # For backwards compatibility of client requests - skips CSRF protection when using RUT
+    #csrfProtectionDisabled: false
+
 # Logging settings.
 logging:
 

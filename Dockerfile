@@ -15,7 +15,7 @@ RUN apt-get update && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV SONATYPE_WORK /sonatype-work
-ENV IQ_VERSION 1.25.0-02
+ENV IQ_VERSION 1.27.0-01
 
 RUN mkdir -p /opt/sonatype/iq-server \
   && curl --fail --silent --location --retry 3 \
