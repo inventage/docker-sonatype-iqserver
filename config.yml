@@ -154,6 +154,9 @@ http:
     # For backwards compatibility of client requests - skips CSRF protection when using RUT
     #csrfProtectionDisabled: false
 
+    # The service URL that will be redirected to when a user requests logout.
+    #logoutUrl: http://localhost/logout/index.html
+
 # Logging settings.
 logging:
 
